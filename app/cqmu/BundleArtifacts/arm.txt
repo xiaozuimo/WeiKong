@@ -1,0 +1,2 @@
+MainPackage=C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\cqmu\bin\ARM\Release\cqmu_1.1.2.0_ARM.appx
+SymbolPackage=C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\cqmu\AppPackages\cqmu_1.1.2.0_Test\cqmu_1.1.2.0_ARM.appxsym

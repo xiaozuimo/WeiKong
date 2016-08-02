@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="cqmu.MVVM.Views.HelpPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:cqmu.MVVM.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="RootGrid">
+        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+            <RelativePanel Margin="12,12,12,0">
+                <TextBlock Name="tbkTitle" FontWeight="Light" Text="帮助" Foreground="White" FontSize="24" Margin="0,-5,0,8"/>
+
+                <TextBlock Name="tbkTopMark" Text="写在最前" FontSize="18" Foreground="White" RelativePanel.Below="tbkTitle" Margin="0,6,0,6"/>
+                <TextBlock Name="tbkTop" FontSize="12" Foreground="White" TextWrapping="Wrap" RelativePanel.Below="tbkTopMark" Margin="0,0,0,6"
+                           Text="开发者水平十分有限，所以应用中存在诸多不足。大家在应用的使用过程中遇到任何问题或是有什么高见，都可以发送邮件到 272078613@qq.com 或者是加入用户交流QQ群 519151717 与开发者取得联系。希望各位童鞋给个好评，谢谢大家！！"/>
+
+                <TextBlock Name="tbkAboutCourseMark" Text="关于课表导入" FontSize="18" Foreground="White" RelativePanel.Below="tbkTop" Margin="0,6,0,6"/>
+                <TextBlock Name="tbkAboutCourse" FontSize="12" Foreground="White" TextWrapping="Wrap" RelativePanel.Below="tbkAboutCourseMark" Margin="0,0,0,6"
+                           Text="课程资源来自重庆医科大学正方教务系统，所以仅支持重医的童鞋导入课表，登录方式与从网页登录教务处是一致的。当正方教务处处于维护期或者网络条件比较差时，导入课表会出现失败的情况，希望大家谅解。此外，部分童鞋在重新导入课表过程中，可能会出现登陆界面弹出较慢的问题，这是由网速不佳或者正方服务器响应较慢引起的，希望各位童鞋放宽心，并且耐心等待哟。o(^▽^)o"/>
+
+                <TextBlock Name="tbkAboutGradeMark" Text="关于期末成绩查询" FontSize="18" Foreground="White" RelativePanel.Below="tbkAboutCourse" Margin="0,6,0,6"/>
+                <TextBlock Name="tbkAboutGrade" FontSize="12" Foreground="White" TextWrapping="Wrap" RelativePanel.Below="tbkAboutGradeMark" Margin="0,0,0,6"
+                           Text="这个模块未开放记住密码的功能，主要是考虑到和课表查看功能的兼容问题，提升App的稳定性。此项功能的默认用户为课表使用者，所以当导入课表时选择了记住密码的童鞋，密码会自动导入。当然，此功能也仅限于查询重庆医科大学的期末成绩，请各位见谅。"/>
+
+                <TextBlock Name="tbkAboutCetMark" Text="关于CET成绩查询" FontSize="18" Foreground="White" RelativePanel.Below="tbkAboutGrade" Margin="0,6,0,6"/>
+                <TextBlock Name="tbkAboutCet" FontSize="12" Foreground="White" TextWrapping="Wrap" RelativePanel.Below="tbkAboutCetMark" Margin="0,0,0,6"
+                           Text="此项服务提供给所有下载微控重医的童鞋。不过只能获取到最近一次等级考试的成绩，望各位见谅。在断网情况或者网络状态不佳的情况下，将无法提示可供查询考试场次。"/>
+
+                <TextBlock Name="tbkAboutBackgroundMark" Text="关于背景图片" FontSize="18" Foreground="White" RelativePanel.Below="tbkAboutCet" Margin="0,6,0,6"/>
+                <TextBlock Name="tbkAboutBackground" FontSize="12" Foreground="White" TextWrapping="Wrap" RelativePanel.Below="tbkAboutBackgroundMark" Margin="0,0,0,6"
+                           Text="开发者的审美能力是硬伤啊...所以还请各位同学按照自己的喜好，设置喜欢的背景图。开发者是不是很贴心呀(●'◡'●)，喜欢那就给个好评吧，开发者需要各位的支持，你们的鼓励就是开发者最大的动力q(≧▽≦q)。"/>
+
+                <TextBlock Name="tbkBottom" FontSize="12" Foreground="White" TextWrapping="Wrap" RelativePanel.Below="tbkAboutBackground" Margin="0,12,0,6"
+                           Text="嗯~开发者哔哔完了！！祝各位童鞋学习、生活愉快(●ˇ∀ˇ●)    萌贱提示：关于页面->跪求好评(●ˇ∀ˇ●)"/>
+            </RelativePanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

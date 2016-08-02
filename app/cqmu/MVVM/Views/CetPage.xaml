@@ -1,0 +1,67 @@
+﻿<Page
+    x:Class="cqmu.MVVM.Views.CetPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:cqmu.MVVM.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="RootGrid">
+        <ScrollViewer Name="svDetail" VerticalScrollBarVisibility="Hidden" Visibility="Collapsed">
+            <Grid Name="detailGrid" HorizontalAlignment="Center" VerticalAlignment="Center" Height="600" Width="360">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="1.2*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="0" Text="考生姓名:" Foreground="White" FontSize="24" TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Text="学       校:" Foreground="White" FontSize="24" TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="2" Text="考试类别:" Foreground="White" FontSize="24" TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="3" Text="准考证号:" Foreground="White" FontSize="24" TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="4" Text="成绩总分:" Foreground="White" FontSize="24" TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="5" Text="听       力:" Foreground="White" FontSize="24" TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="6" Text="阅       读:" Foreground="White" FontSize="24" TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="7" Text="写作翻译:" Foreground="White" FontSize="24" TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Grid.Row="8" Grid.ColumnSpan="2" Foreground="White" FontSize="18" TextAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap"
+                           Text="      英语四级的成绩为500分以上(含500分)，或英语六级成绩为425分以上(含425分)，具备报考大学英语四、六级口语考试的资格。"/>
+            </Grid>
+        </ScrollViewer>
+
+        <RelativePanel Grid.Row="0" Grid.RowSpan="2" Name="SignInGrid" VerticalAlignment="Center">
+            <TextBox Name="txtCode" MinWidth="300" Tag="tagUserId" Margin="0,6,0,6"
+                     PlaceholderText="{Binding TxtCodePlaceholder}"
+                     RelativePanel.AlignHorizontalCenterWithPanel="True"/>
+
+            <TextBox Name="txtName" MinWidth="300" Tag="tagCode" Margin="0,6,0,6"
+                     PlaceholderText="姓名"
+                     RelativePanel.AlignHorizontalCenterWithPanel="True"
+                     RelativePanel.Below="txtCode"/>
+            
+            <RelativePanel RelativePanel.Below="txtName" MinWidth="300" RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="0,6,0,6">
+                <Button Name="btnConfirm" Content="确    认" Background="{StaticResource SystemControlBackgroundAccentBrush}" Foreground="White" BorderThickness="0" FontSize="18" RelativePanel.AlignRightWithPanel="True"                    
+                    Click="btnConfirm_Click"
+                    Style="{StaticResource btnConfirmStyle}"/>
+            </RelativePanel>
+        </RelativePanel>
+
+        <RelativePanel Name="TipPanel" Background="#BB000000" Grid.RowSpan="3" Visibility="Collapsed">
+            <ProgressRing Name="TipRing" IsActive="True" Foreground="White" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"/>
+
+            <TextBlock Text="努力加载中" TextAlignment="Center" Margin="0,6,0,0" FontSize="15" Foreground="White" RelativePanel.Below="TipRing" RelativePanel.AlignHorizontalCenterWithPanel="True"></TextBlock>
+        </RelativePanel>
+    </Grid>
+</Page>

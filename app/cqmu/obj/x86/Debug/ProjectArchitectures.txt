@@ -1,0 +1,4 @@
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\BackgroundTask\BackgroundTask.csproj;neutral
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\cqmu\cqmu.csproj;x86
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\TileUpdateService.csproj;neutral
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\TileUpdateService.csproj;neutral

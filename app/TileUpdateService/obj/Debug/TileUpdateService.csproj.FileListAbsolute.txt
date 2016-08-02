@@ -1,0 +1,17 @@
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\bin\Debug\TileUpdateService.dll
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\bin\Debug\TileUpdateService.pdb
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\bin\Debug\TileUpdateService.pri
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\obj\Debug\TileUpdateService.csprojResolveAssemblyReference.cache
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\obj\Debug\TileUpdateService.dll
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\obj\Debug\TileUpdateService.pdb
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\obj\Debug\priconfig.xml
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\obj\Debug\priconfig.xml.intermediate
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\obj\Debug\layout.resfiles
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\obj\Debug\layout.resfiles.intermediate
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\obj\Debug\resources.resfiles
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\obj\Debug\resources.resfiles.intermediate
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\obj\Debug\pri.resfiles
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\obj\Debug\pri.resfiles.intermediate
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\obj\Debug\qualifiers.txt
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\obj\Debug\qualifiers.txt.intermediate
+C:\Users\xiaoz\Documents\Visual Studio 2015\Projects\cqmu\TileUpdateService\obj\Debug\MultipleQualifiersPerDimensionFound.txt

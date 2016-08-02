@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="cqmu.MVVM.Views.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:cqmu.MVVM.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="RootGrid">
+        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+            <RelativePanel Margin="12,12,12,0">
+                <TextBlock Name="tbkTitle" FontWeight="Light" Text="关于" Foreground="White" FontSize="24" Margin="12,-5,0,8"/>
+
+                <StackPanel RelativePanel.AlignHorizontalCenterWithPanel="True" Margin="12,32,6,0">
+                    <Image Source="/Assets/Square71x71Logo.scale-200.png" Height="160" Margin="0,12,0,12"/>
+
+                    <TextBlock Text="微控重医" Foreground="White" HorizontalAlignment="Center" Margin="0,-55,0,0"/>
+                    <TextBlock x:Name="tbkVersion" Foreground="White" HorizontalAlignment="Center" FontSize="12" Margin="0,-35,0,0"/>
+
+                    <Button Content="意见反馈" Foreground="White" Background="Transparent" HorizontalAlignment="Center" BorderThickness="0"
+                    Click="btnSendEmail_Click"/>
+
+                    <Button Content="跪求好评" Foreground="White" Background="Transparent" HorizontalAlignment="Center" BorderThickness="0"
+                    Click="btnReview_Click"/>
+
+                    <Button Content="用户交流" Foreground="White" Background="Transparent" HorizontalAlignment="Center" BorderThickness="0"
+                    Click="btnCommunicate_Click"/>
+
+                    <Button Content="检查更新" Foreground="White" Background="Transparent" HorizontalAlignment="Center" BorderThickness="0"
+                    Click="btnCheckForUpdate_Click"/>
+
+                    <TextBlock Text="鸣谢" HorizontalAlignment="Center" Foreground="White" Margin="0,12,0,6"/>
+
+                    <Ellipse  Height="40" Width="40">
+                        <Ellipse.Fill>
+                            <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/Acknowledgement/Zhuimeng.jpg"></ImageBrush>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <HyperlinkButton Content="Developer Meng" HorizontalAlignment="Center" FontSize="12" NavigateUri="http://weibo.zhuimeng.me"/>
+                    <TextBlock Text="为App开发提供指导的孟大神" Foreground="White" FontSize="12" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </RelativePanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
